@@ -1,5 +1,6 @@
 package com.example.skadush.smackchatapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -37,6 +38,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun loginButtonNavClick(view:View){
+        val logInIntent = Intent(this,LogInActivity::class.java)
+        startActivity(logInIntent)
     }
 
     fun addChannelClick(view:View){
